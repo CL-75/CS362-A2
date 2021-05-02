@@ -9,5 +9,8 @@ import unittest
 # Class for password check tests
 class TestCase(unittest.TestCase):
 
+# Testing for empty string
 	def test1(self):
+		pwd = ''
+		self.assertFalse(check_pwd(pwd))
 		
