@@ -23,3 +23,5 @@ class TestCase(unittest.TestCase):
 	def test3(self):
 		pwd = 'ABCDEFG'
 		self.assertFalse(check_pwd(pwd))
+
+	def test4(self):
