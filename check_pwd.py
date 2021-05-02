@@ -7,6 +7,7 @@
 def check_pwd(pwd):
 	digit_count = 0
 	upper = 0
+	lower = 0
 # Check for empty string, returns False if true
 	if pwd == '':
 		return False
@@ -20,5 +21,10 @@ def check_pwd(pwd):
 	for x in pwd:
 		if x.isupper():
 			upper += 1
+
+# Check for all lowercase letters
+	for x in pwd:
+		if x.islower():
+			lower += 1
 
 
