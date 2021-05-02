@@ -13,4 +13,9 @@ class TestCase(unittest.TestCase):
 	def test1(self):
 		pwd = ''
 		self.assertFalse(check_pwd(pwd))
+
+# Checking for all digits
+	def test2(self):
+		pwd = '123456'
+		self.assertFalse(check_pwd(pwd))
 		
