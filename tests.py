@@ -24,4 +24,7 @@ class TestCase(unittest.TestCase):
 		pwd = 'ABCDEFG'
 		self.assertFalse(check_pwd(pwd))
 
+# Checking for all lowercase letters
 	def test4(self):
+		pwd = 'abcdefg'
+		self.assertFalse(check_pwd(pwd))
