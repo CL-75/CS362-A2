@@ -5,6 +5,13 @@
 
 
 def check_pwd(pwd):
-
+	digit_count = 0
+# Check for empty string, returns False if true
 	if pwd == '':
 		return False
+
+# Check for all digits 
+	for x in pwd:
+		if x.isdigit():
+			digit_count += 1
+
