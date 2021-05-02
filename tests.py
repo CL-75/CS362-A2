@@ -19,3 +19,7 @@ class TestCase(unittest.TestCase):
 		pwd = '123456'
 		self.assertFalse(check_pwd(pwd))
 		
+# Checking for all uppercase letters
+	def test3(self):
+		pwd = 'ABCDEFG'
+		self.assertFalse(check_pwd(pwd))
