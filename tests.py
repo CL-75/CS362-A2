@@ -14,17 +14,22 @@ class TestCase(unittest.TestCase):
 		pwd = ''
 		self.assertFalse(check_pwd(pwd))
 
-# Checking for all digits
+# Checking for all digits, invalid length of 6
 	def test2(self):
 		pwd = '123456'
 		self.assertFalse(check_pwd(pwd))
 		
-# Checking for all uppercase letters
+# Checking for all uppercase letters, invalid length of 7
 	def test3(self):
 		pwd = 'ABCDEFG'
 		self.assertFalse(check_pwd(pwd))
 
-# Checking for all lowercase letters
+# Checking for all lowercase letters, invalid length of 7 
 	def test4(self):
 		pwd = 'abcdefg'
+		self.assertFalse(check_pwd(pwd))
+
+# Checking for combo upper and lowercase letters, invalid length of 7
+	def test5(self):
+		pwd = 'abcDEFG'
 		self.assertFalse(check_pwd(pwd))
