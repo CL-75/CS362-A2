@@ -8,6 +8,8 @@ def check_pwd(pwd):
 	digit_count = 0
 	upper = 0
 	lower = 0
+	sym = '~`!@#$%^&*()_+-='
+	sym_count = 0
 
 # First checking to ensure valid length
 	if len(pwd) < 8 or len(pwd) > 20:
@@ -31,5 +33,11 @@ def check_pwd(pwd):
 	for x in pwd:
 		if x.islower():
 			lower += 1
+
+# Check for symbols
+	for x in pwd:
+		for y in sym:
+			if x == y:
+				sym_count += 1
 
 
