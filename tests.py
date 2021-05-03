@@ -49,3 +49,6 @@ class TestCase(unittest.TestCase):
 	def test8(self):
 		pwd = 'abcDEF123[]'
 		self.assertFalse(check_pwd(pwd))
+
+if __name__ == '__main__':
+    unittest.main()
