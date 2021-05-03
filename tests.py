@@ -42,9 +42,9 @@ class TestCase(unittest.TestCase):
 # Checking for upper, lowercase, and digits, valid length of 9
 	def test7(self):
 		pwd = 'abcDEF123'
-		self.assertTrue(check_pwd(pwd))
+		self.assertFalse(check_pwd(pwd))
 
 # Checking for valid password except with invalid symbols
 	def test8(self):
 		pwd = 'abcDEF123[]'
-		self.assertTrue(check_pwd(pwd))
+		self.assertFalse(check_pwd(pwd))
