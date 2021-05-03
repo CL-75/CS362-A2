@@ -35,6 +35,7 @@ class TestCase(unittest.TestCase):
 		self.assertFalse(check_pwd(pwd))
 
 # Checking for fully valid password and valid length of 11
+# check_pwd.py should return True for this even if this is an assertFalse
 	def test6(self):
 		pwd = 'abcDEFG123!'
 		self.assertFalse(check_pwd(pwd))
