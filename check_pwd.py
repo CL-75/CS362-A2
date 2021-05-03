@@ -8,6 +8,11 @@ def check_pwd(pwd):
 	digit_count = 0
 	upper = 0
 	lower = 0
+
+# First checking to ensure valid length
+	if len(pwd) < 8 or len(pwd) > 20:
+		return False
+
 # Check for empty string, returns False if true
 	if pwd == '':
 		return False
