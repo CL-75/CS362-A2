@@ -33,3 +33,8 @@ class TestCase(unittest.TestCase):
 	def test5(self):
 		pwd = 'abcDEFG'
 		self.assertFalse(check_pwd(pwd))
+
+# Checking for fully valid password and valid length of 12
+	def test6(self):
+		pwd = 'abcDEFG123!@'
+		self.assertTrue(check_pwd(pwd))
