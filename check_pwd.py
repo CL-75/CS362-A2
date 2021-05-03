@@ -39,6 +39,9 @@ def check_pwd(pwd):
 		for y in sym:
 			if x == y:
 				sym_count += 1
+				return True
+			else:
+				return False
 
 	if upper == 0:
 		return False
