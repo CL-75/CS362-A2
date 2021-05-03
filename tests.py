@@ -38,3 +38,8 @@ class TestCase(unittest.TestCase):
 	def test6(self):
 		pwd = 'abcDEFG123!@'
 		self.assertFalse(check_pwd(pwd))
+
+# Checking for upper, lowercase, and digits, valid length of 9
+	def test7(self):
+		pwd = 'abcDEF123'
+		self.assertFalse(check_pwd(pwd))
