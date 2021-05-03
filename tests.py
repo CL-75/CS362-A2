@@ -43,3 +43,7 @@ class TestCase(unittest.TestCase):
 	def test7(self):
 		pwd = 'abcDEF123'
 		self.assertFalse(check_pwd(pwd))
+
+# Checking for valid password except with invalid symbols
+	def test8(self):
+		pwd = 'abcDEF123[]'
