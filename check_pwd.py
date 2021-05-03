@@ -40,4 +40,13 @@ def check_pwd(pwd):
 			if x == y:
 				sym_count += 1
 
+	if upper == 0:
+		return False
+	if lower == 0:
+		return False
+	if digit_count == 0:
+		return False
+
+	return True
+
 
