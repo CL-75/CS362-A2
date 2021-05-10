@@ -38,7 +38,7 @@ class TestCase(unittest.TestCase):
 # check_pwd.py should return True for this even if this is an assertFalse
 	def test6(self):
 		pwd = 'abcDEFG123!'
-		self.assertFalse(check_pwd(pwd))
+		self.assertTrue(check_pwd(pwd))
 
 # Checking for upper, lowercase, and digits, valid length of 9
 	def test7(self):
