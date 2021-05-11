@@ -5,6 +5,7 @@
 
 from check_pwd import check_pwd
 import unittest
+import random
 
 # Class for password check tests
 class TestCase(unittest.TestCase):
